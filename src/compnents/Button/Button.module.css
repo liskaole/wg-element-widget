@@ -1,0 +1,21 @@
+.btn {
+    width: fit-content;
+    height: var(--base-btn-height);
+    color: var(--primary-text-color);
+    border: none;
+    cursor: pointer;
+    padding: 0 30px;
+    font-size: var(--default-font-size);
+}
+.btn:hover, .btn:focus {
+    filter: brightness(95%);
+}
+.btn:active {
+    filter: brightness(85%);
+}
+.successBtn {
+    background-color: var(--success-color);
+}
+.dangerBtn {
+    background-color: var(--danger-color);
+}

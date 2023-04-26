@@ -1,0 +1,8 @@
+.widgetContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 60%;
+    padding: 0 30px;
+    background-color: var(--primary-text-color);
+}

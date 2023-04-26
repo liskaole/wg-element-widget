@@ -1,0 +1,15 @@
+.closeIcon:after{
+    display: inline-block;
+    content: "\00d7";
+    cursor: pointer;
+    font-size: medium;
+    color: var(--primary-text-color);
+    padding: 0 10px;
+}
+
+.closeIcon:hover, .closeIcon:focus {
+    filter: brightness(90%);
+}
+.closeIcon:active {
+    filter: brightness(80%);
+}

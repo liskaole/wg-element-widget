@@ -1,0 +1,16 @@
+.item {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-bg-color-1);
+    font-size: var(--default-font-size);
+    height: var(--base-btn-height);
+}
+.itemLabel {
+    width: 100%;
+    color: var(--primary-text-color);
+    padding: 0 10px;
+    border-right: 1px solid var(--primary-text-color);
+    border-color: rgba(var(--primary-text-color), 0.7);
+}

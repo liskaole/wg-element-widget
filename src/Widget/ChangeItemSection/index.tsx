@@ -30,7 +30,7 @@ const ChangeItemSection = () => {
             </Button>
             {
                 showItemList &&
-                <Row gap={[20, 0]} className={style.selectItems}>
+                <Row data-testid='item-list' gap={[20, 0]} className={style.selectItems}>
                     <HeaderSection onClose={onClose} />
                     <SearchItemForm />
                     <PreSelectedItemsSection />

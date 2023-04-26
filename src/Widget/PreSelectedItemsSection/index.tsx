@@ -12,7 +12,8 @@ const PreSelectedItemsSection = () => {
             <Row gap={[10, 10]}>
                 {
                     elementStore.preSelectedItems.map(item => 
-                        <Item 
+                        <Item
+                            key={item.id} 
                             itemName={item.name + ' ' + item.elementNumber}
                             onClick={() => elementStore.togglePreSelected(item.id)}
                         />

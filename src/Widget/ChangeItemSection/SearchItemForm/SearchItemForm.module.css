@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+.formField {
+    display: flex;
+    column-gap: 10px;
+}
+.formField input, .formField select {
+    width: 100%;
+}

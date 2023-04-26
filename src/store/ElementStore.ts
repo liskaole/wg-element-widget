@@ -4,7 +4,7 @@ import { generateElementArray, getRandomNumbers } from '../utils/generateElement
 import { ElementI } from "./ElementModel";
 
 export class ElementStore {
-  constructor(totalElements: number) {
+  constructor() {
     makeObservable(this, {
       items: observable,
       searchVal: observable,
@@ -15,10 +15,9 @@ export class ElementStore {
       isSelectionDisabled: computed,
       resetPreSelected: action
     })
-    this.totalElements = totalElements
   }
 
-  totalElements: number = 0;
+  totalElements: number = 300;
   public items: ElementI[] = generateElementArray(this.totalElements, getRandomNumbers(2, this.totalElements));
   public searchVal: string = '';
   public filterVal: number = 0;

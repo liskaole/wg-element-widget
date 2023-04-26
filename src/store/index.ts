@@ -1,8 +1,7 @@
 import { createContext, useContext } from "react";
 import { ElementStore } from "./ElementStore";
 
-const TOTAL_ELEMENTS = 300; 
-const elementStore = new ElementStore(TOTAL_ELEMENTS)
+const elementStore = new ElementStore()
 
 export const rootStoreContext = createContext({
   elementStore: elementStore,
